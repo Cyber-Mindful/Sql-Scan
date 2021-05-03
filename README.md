@@ -9,8 +9,8 @@ a tool is scanning websites for search about websites Injured in sql
 pkg update -y
 pkg install git python2 -y
 pip2 install base64
-git clone https://github/as9697347/sql-scan.git
-cd sql-scan
+git clone https://github/as9697347/Sql-Scan.git
+cd Sql-Scan
 python2 sql-scan.py
 ```
 # Search Engine:
