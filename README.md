@@ -1,36 +1,14 @@
 # Sql-Scan
 a tool is scanning websites for search about websites Injured in sql
 # Screenshot
-<style>
-img{
-display:block;
-margin:auto;
-align:center;
-margin-bottom:5px;
-}
-</style>
-<img id='i' src="img/sql.png"/>
-<img id='i2' src="img/scan.png"/>
-<script type="text/javascript">
-function a(){
-if(screen.height>screen.width){
-document.getElementById('i').style.width='270';
-document.getElementById('i2').style.width='270';
-}
-else{
-document.getElementById('i').style.width='';
-document.getElementById('i2').style.width='';
-}
-setTimeout('a()',0);
-}
-a()
-</script>
+<img  src="img/sql.png"/>
+<img  src="img/scan.png"/>
 
 # Install
 ```
 pkg update -y
 pkg install git python2 -y
-pip2 install base4
+pip2 install base64
 git clone https://github/as9697347/sql-scan.git
 cd sql-scan
 python2 sql-scan.py
