@@ -189,7 +189,7 @@ def start():
 			if not link in urls:
 				if '/url?q=' in link:
 					link=link.replace('/url?q=','')
-				if 'http' in link or 'www' in link:
+				if link[:4]=='http' or link[:3]=='www':
 					print timer+'\033[1;34m[\033[1;37m=\033[1;34m]\033[1;33m Link \033[0m\033[32m: \033[1;37m',link,'\033[0m'
 				urls.append(link)
 				time.sleep(.2)
