@@ -193,9 +193,10 @@ def start():
 					print timer+'\033[1;34m[\033[1;37m=\033[1;34m]\033[1;33m Link \033[0m\033[32m: \033[1;37m',link,'\033[0m'
 				urls.append(link)
 				time.sleep(.2)
-				if '?id=' in link or '%3Fid%3D' in link or '?num=' in link or '?file=' in link or '?cat=' in link or '?ID=' in link:
-					print timer+'\033[1;34m[*] \033[1;35mScan link: \033[1;36m',link,'\033[0m'
-					time.sleep(.2)
+				if link[:4]=='http' or link[:3]=='www':
+					if '?id=' in link or '%3Fid%3D' in link or '?num=' in link or '?file=' in link or '?cat=' in link or '?ID=' in link:
+						print timer+'\033[1;34m[*] \033[1;35mScan link: \033[1;36m',link,'\033[0m'
+						time.sleep(.2)
 					database.append(link)
 		print '\033[1;34m[*]\033[1;33m Start scan links \033[1;32m',len(database),'\033[0m'
 		for link in database:
