@@ -14,7 +14,7 @@ cd Sql-Scan
 python2 sql-scan.py
 ```
 # Search Engine:
-# Goole
+# Google
 # Bing
 # Yahoo
 
